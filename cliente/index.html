@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Enceder/Apagar Leds</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">    
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">//-->
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<script src = 'js/script.js'></script>
+	<script src = 'js/socket.io.min.js'></script>
+
+</head>
+<body>
+	<center><h1>Enceder/Apagar Leds</h1></center>
+	<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+	  <tr>
+	    <td width="50%">
+	    	<div align="right" class="espacioleds">
+	    		<div class="baseleds amarillo_apagado" id = 'led_amarillo'></div>	    	
+	    	</div>
+	    </td>
+	    <td width="50%">
+	    	<div class="checkjh" align="left">
+				<input type = 'checkbox' id = 'checkbox-10-0' />
+				<label for = 'checkbox-10-0'></label>
+			</div>
+	    </td>
+	  </tr>
+	  <tr>
+	    <td>
+	    	<div align="right" class="espacioleds">
+	    		<div class="baseleds verde_apagado" id = 'led_verde'></div>	    	
+	    	</div>	    	
+	    </td>
+	    <td>
+	    	<div class="checkjh" align="left">
+				<input type = 'checkbox' id = 'checkbox-10-1'  />
+				<label for = 'checkbox-10-1'></label>
+			</div>
+	    </td>
+	  </tr>
+	  <tr>
+	    <td>
+	    	<div align="right" class="espacioleds">
+	    		<div class="baseleds rojo_apagado" id = 'led_rojo'></div>	    	
+	    	</div>	
+	    </td>
+	    <td>
+	    	<div class="checkjh" align="left">
+				<input type = 'checkbox' id = 'checkbox-10-2'/>
+				<label for = 'checkbox-10-2'></label>
+			</div>
+	    </td>
+	  </tr>
+	</table>
+	<hr>
+	<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+	  <tr>
+	    <td width="50%">
+	    	<div align="right" class="espacioleds">
+	    		<b>Strobe</b>
+	    	</div>
+	    </td>
+	    <td width="50%">
+	    	<div class="checkjh" align="left">
+				<input type = 'checkbox' id = 'checkbox-9-2'/>
+				<label for = 'checkbox-9-2'></label>
+			</div>
+	    </td>
+	  </tr>
+	</table>
+	<hr>
+	<center>
+	<b>Velocidad Strobe</b><br>
+	<input type="range" id = "velStrobe" min = "100" max="1000" value = '100' step = '100'><br>
+	</center>
+</body>
+</html>

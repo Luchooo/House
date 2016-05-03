@@ -1,0 +1,22 @@
+{
+  "name": "ledsudec",
+  "version": "1.0.0",
+  "description": "Control de encendido y apagado Leds",
+  "main": "led03.js",
+  "dependencies": {
+    "johnny-five": "*",
+    "socket.io": "0.9.16"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node led03.js",
+    "start": "node led03.js"
+  },
+  "keywords": [
+    "node",
+    "leds",
+    "arduino"
+  ],
+  "author": "Jorge Rubiano",
+  "license": "ISC"
+}
